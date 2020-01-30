@@ -1,0 +1,34 @@
+{
+  "name": "tbk_signer",
+  "version": "1.0.0",
+  "description": "Firma y verificación de sistema SOAP de Transbank",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --coverage=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabianBravoA/tbk_signer.git"
+  },
+  "keywords": [
+    "tbk",
+    "transbank",
+    "node",
+    "signer",
+    "soap"
+  ],
+  "author": "Fabián Alexis Bravo Abarca",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/FabianBravoA/tbk_signer/issues"
+  },
+  "homepage": "https://github.com/FabianBravoA/tbk_signer#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  }
+}
