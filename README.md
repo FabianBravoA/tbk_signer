@@ -1,6 +1,6 @@
 # Módulo de seguridad, firma y verificación de SOAP para Transbank
 
-[![Build Status](https://travis-ci.org/FabianBravoA/tbk-signer.png?branch=master)](https://travis-ci.org/FabianBravoA/tbk-signer)
+[![Build Status](https://travis-ci.org/FabianBravoA/tbk_signer.png?branch=master)](https://travis-ci.org/FabianBravoA/tbk_signer)
 
 Este módulo está pensado para usarse en conjunto con la biblioteca 
 [Node SOAP](https://github.com/vpulim/node-soap). Su función principal es
