@@ -1,3 +1,6 @@
 import tbkSecurityGen from './lib/wsSecurityCertTBK';
 
-export default tbkSecurityGen;
+export const tbkSecurityGenerator = tbkSecurityGen;
+export const verifySignature = () => {
+
+};
