@@ -1,5 +1,6 @@
 # Módulo de seguridad, firma y verificación de SOAP para Transbank
 
+[![https://nodei.co/npm/tbk_signer.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/tbk_signer.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tbk_signer)
 [![Build Status](https://travis-ci.org/FabianBravoA/tbk_signer.png?branch=master)](https://travis-ci.org/FabianBravoA/tbk_signer)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/FabianBravoA/tbk_signer/issues)
 
