@@ -27,11 +27,66 @@ necesites una implementación especial puedes usar este módulo para crearla.
 
 ## Instalación
 
+```
+npm i --save tbk_signer
+```
+
 ## Uso
+
+### Obtención de objeto de seguridad para Node-SOAP
+
+````javascript
+import { tbkSecurityGenerator } from 'tbk_signer';
+
+/*
+ * privateCert es un string que contiene el certificado privado en formato PEM
+ * publicCert es un string que contiene el certificado público en formato PEM
+ */
+tbkSecurityGenerator(privateCert, publicCert)
+        .then(
+          (tbkSecurityForSoap) => {
+            createClient(
+              'https://webpay3gint.transbank.cl/WSWebpayTransaction/cxf/WSWebpayService?wsdl',
+              {
+                ignoredNamespaces: {
+                  namespaces: [],
+                  override: true,
+                },
+              },
+              (soapError, client) => {
+                expect(soapError).toBe(null);
+                client.setSecurity(tbkSecurityForSoap);
+
+                /*
+                 * Desde este punto en adelante el cliente está listo para hacer
+                 * una transacción.
+                 */
+              },
+            );
+          },
+        )
+````
 
 ## Test
 
+```
+npm test
+```
+
+Se usa __Jest__ para testear este módulo, además de que se prueba antes el
+formato del código con __eslint__. No se aceptará ningún *pull request* que no
+pase ambas etapas del testeo.
+
 ## Cómo contribuir
+
+Todas las contribuciones son bienvenidas, es recomendable eso si que primero
+escribas un *issue* explicando la mejora o problema. Luego crea el
+*pull request* en base a ese *issue*.
+
+También, si es que quieres aportar un café porque te ha gustado este
+repositorio, puedes hacerlo a través de ko-fi:
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y11E2KP)
 
 ## Licencia
 
