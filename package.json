@@ -1,6 +1,6 @@
 {
   "name": "tbk_signer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Firma y verificación de sistema SOAP de Transbank",
   "main": "index.js",
   "directories": {
