@@ -74,6 +74,10 @@ import{ verifySignature } from 'tbk_signer';
 client.WSWebpayServiceImplService.WSWebpayServiceImplPort.initTransaction(
   testInput,
   (error, result, raw) => {
+    /*
+     * WebpayCert es la ruta al archivo que contiene la firma de verificación en
+     * formato PEM
+     */
     if(verifySignature(webpayCert, raw)){
       /*
        * Mensaje verificado, todo OK para continuar con la transacción
