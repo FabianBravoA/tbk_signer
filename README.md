@@ -67,6 +67,25 @@ tbkSecurityGenerator(privateCert, publicCert)
         )
 ````
 
+### Verificación de respuesta de Transbank usando certificado PEM
+````javascript
+client.WSWebpayServiceImplService.WSWebpayServiceImplPort.initTransaction(
+  testInput,
+  (error, result, raw) => {
+    if(verifySignature(webpayCert, raw)){
+      /*
+       * Mensaje verificado, todo OK para continuar con la transacción
+       */
+    } else {
+      /*
+       * Mensaje falla la verificación, posible ataque o mensaje sospechoso
+       */
+    }
+    
+  },
+);
+````
+
 ## Test
 
 ```
