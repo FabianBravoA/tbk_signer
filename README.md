@@ -54,7 +54,6 @@ tbkSecurityGenerator(privateCert, publicCert)
                 },
               },
               (soapError, client) => {
-                expect(soapError).toBe(null);
                 client.setSecurity(tbkSecurityForSoap);
 
                 /*
