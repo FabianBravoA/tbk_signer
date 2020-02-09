@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Firma y verificación de sistema SOAP de Transbank",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "test"
   },
