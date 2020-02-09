@@ -1,4 +1,4 @@
-export default `
+module.exports = `
 <wsse:SecurityTokenReference>
     <X509Data xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
       <X509IssuerSerial>

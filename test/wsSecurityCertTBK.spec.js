@@ -1,7 +1,7 @@
-import fs from 'fs';
-import { resolve } from 'path';
-import { createClient } from 'soap';
-import { tbkSecurityGenerator, verifySignature } from '../index';
+const fs = require('fs');
+const { resolve } = require('path');
+const { createClient } = require('soap');
+const { tbkSecurityGenerator, verifySignature } = require('../index');
 
 jest.setTimeout(10000);
 const privateCert = fs.readFileSync(resolve('testCerts/privateTestCert.pem'), { encoding: 'utf-8' });

@@ -1,7 +1,7 @@
-import tbkSecurityGenerator from './lib/wsSecurityCertTBK';
-import verifySignature from './lib/signatureVerifier';
+const tbkSecurityGenerator = require('./lib/wsSecurityCertTBK');
+const verifySignature = require('./lib/signatureVerifier');
 
-export {
+module.exports = {
   tbkSecurityGenerator,
   verifySignature,
 };
