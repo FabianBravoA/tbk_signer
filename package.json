@@ -35,7 +35,7 @@
     "@babel/preset-env": "^7.8.4"
   },
   "dependencies": {
-    "ejs": "^3.0.1",
+    "ejs": "^3.0.2",
     "jest": "^25.1.0",
     "pem": "^1.14.4",
     "soap": "^0.31.0",
